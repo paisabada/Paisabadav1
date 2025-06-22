@@ -16,11 +16,11 @@ header {
     align-items: center;
 }
 .logo {
-    height: 60px;
+    height: 100px;
 }
 .powered {
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 14px;
 }
 .hero {
     padding: 3rem 1rem;
