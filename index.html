@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paisabada | Powered by Wealtrix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/paisabada-logo.png" alt="Paisabada Logo" class="logo">
+    <h1>Your Paisa. Our Platform.</h1>
+    <p>Explore Term Insurance, General Insurance, Mutual Funds, Loans & Health Plans — all in one place.</p>
+    <a href="#contact" class="cta">Start My Paisa Journey</a>
+  </section>
+
+  <!-- What We Offer -->
+  <section class="offerings" id="offerings">
+    <h2>What We Offer</h2>
+    <div class="cards">
+      <div class="card" onclick="openForm('Term Insurance')">
+        <img src="images/term.png" alt="Term Insurance">
+        <h3>Term Insurance</h3>
+      </div>
+      <div class="card" onclick="openForm('General Insurance')">
+        <img src="images/general.png" alt="General Insurance">
+        <h3>General Insurance</h3>
+      </div>
+      <div class="card" onclick="openForm('Mutual Funds')">
+        <img src="images/mutual.png" alt="Mutual Funds">
+        <h3>Mutual Funds</h3>
+      </div>
+      <div class="card" onclick="openForm('Health Insurance')">
+        <img src="images/health.png" alt="Health Insurance">
+        <h3>Health Insurance</h3>
+      </div>
+      <div class="card" onclick="openForm('Loans')">
+        <img src="images/loan.png" alt="Loans">
+        <h3>Loans</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- We Work With Trusted Brands -->
+  <section class="brands">
+    <h2>We Work With Trusted Brands</h2>
+    <div class="brand-logos">
+      <img src="images/lic.png" alt="LIC">
+      <img src="images/hdfc.png" alt="HDFC Life">
+      <img src="images/icici.png" alt="ICICI Prudential">
+      <img src="images/bajaj.png" alt="Bajaj Allianz">
+      <img src="images/tata.png" alt="Tata AIG">
+      <img src="images/aditya.png" alt="Aditya Birla Capital">
+    </div>
+    <p class="disclaimer">Logos are used for representation only. Paisabada is independently operated by Wealtrix Fintech Pvt Ltd.</p>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us">
+    <h2>Why Choose Paisabada?</h2>
+    <ul>
+      <li>Compare and buy the best plans</li>
+      <li>100% free consultation</li>
+      <li>Track investments & renewals easily</li>
+      <li>Partnered with top insurance companies</li>
+    </ul>
+  </section>
+
+  <!-- Join as PoSP -->
+  <section class="partner" id="partner">
+    <h2>Become a Paisabada Partner</h2>
+    <p>Join as a Point of Sales Person (PoSP) and start earning by helping others secure their future.</p>
+    <a href="#contact" class="cta">Join Now</a>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Mobile Number" required>
+      <input type="text" name="city" placeholder="City" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Lead Form Modal -->
+  <div id="leadModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeForm()">&times;</span>
+      <h3 id="productTitle"></h3>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="Mobile No" required>
+        <input type="text" placeholder="City" required>
+        <input type="text" placeholder="Occupation" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Paisabada. Powered by Wealtrix Fintech Pvt. Ltd.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
