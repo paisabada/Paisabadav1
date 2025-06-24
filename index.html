@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,11 +77,12 @@
   <!-- Contact -->
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <form>
+    <form action="https://formsubmit.co/contact@paisabada.in" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="tel" name="phone" placeholder="Mobile Number" required>
       <input type="text" name="city" placeholder="City" required>
       <textarea name="message" placeholder="Your Message"></textarea>
+      <input type="hidden" name="_subject" value="New POSP Inquiry - Contact Section">
       <button type="submit">Submit</button>
     </form>
   </section>
@@ -92,11 +92,12 @@
     <div class="modal-content">
       <span class="close" onclick="closeForm()">&times;</span>
       <h3 id="productTitle"></h3>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="tel" placeholder="Mobile No" required>
-        <input type="text" placeholder="City" required>
-        <input type="text" placeholder="Occupation" required>
+      <form action="https://formsubmit.co/contact@paisabada.in" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="tel" name="phone" placeholder="Mobile No" required>
+        <input type="text" name="city" placeholder="City" required>
+        <input type="text" name="occupation" placeholder="Occupation" required>
+        <input type="hidden" name="_subject" id="productSubject" value="New Product Inquiry">
         <button type="submit">Submit</button>
       </form>
     </div>

@@ -1,66 +1,100 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
 .hero {
-  background: #f0f4ff;
-  padding: 60px 20px;
+  background-color: #eef4ff;
   text-align: center;
+  padding: 2em;
 }
-
-.hero .logo {
-  max-width: 200px;
-  margin-bottom: 20px;
+.logo {
+  width: 150px;
 }
-
 .cta {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #0077cc;
-  color: white;
+  margin-top: 1em;
+  background: #007bff;
+  color: #fff;
+  padding: 0.75em 1.5em;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
 }
-
 .offerings, .brands, .why-us, .partner, .contact {
-  padding: 40px 20px;
+  padding: 2em;
   text-align: center;
 }
-
 .cards {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 1em;
 }
-
 .card {
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  width: 200px;
+  border-radius: 12px;
+  padding: 1em;
+  width: 180px;
   cursor: pointer;
   background: #fff;
 }
-
 .card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  width: 50px;
 }
-
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
 .brand-logos img {
-  max-width: 100px;
-  margin: 10px;
+  width: 80px;
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+input, textarea {
+  padding: 0.75em;
+  font-size: 1em;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75em;
+  border: none;
+  border-radius: 6px;
+}
 footer {
   background: #222;
-  color: white;
+  color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 1em 0;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2em;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+.close {
+  float: right;
+  font-size: 1.5em;
+  cursor: pointer;
 }
